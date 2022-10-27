@@ -1,10 +1,5 @@
 # Recipe for JSUT corpus
-Finetuning the Whisper ASR model using the [JSUT corpus](https://sites.google.com/site/shinnosuketakamichi/publication/jsut). I recommend to use Anaconda or the other virtual enviroments.
-
-## Step -1: Install
-```
-pip install -r requirement.txt
-```
+Finetuning the Whisper ASR model using the [JSUT corpus](https://sites.google.com/site/shinnosuketakamichi/publication/jsut). 
 
 ## Step 0: Configuration
 See `config.yaml` to check the configurations. Switch data.frontend to `None` if you prefer to use raw text instead of Japanese Kana text.

@@ -4,6 +4,12 @@ This repository provides codes for finetuning the [Whisper ASR model](https://gi
 ## Recipes (see ./recipes)
  - [JSUT](https://sites.google.com/site/shinnosuketakamichi/publication/jsut) (ja) 
 
+## Install
+I recommend to use Anaconda or the other virtual enviroments.
+```
+pip install -r requirement.txt
+```
+
 ## To-Do lists
  - [] non-Japanese language
  - [] data with timestamps
