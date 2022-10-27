@@ -22,7 +22,7 @@ python preprocessing.py
 ```
 
 ## Step 3: Training
-Finetune the Whisper ASR model.
+Finetune the Whisper ASR model. It takes less than 1 hour on XXX in Google Colab.
 ```
 python train.py
 ```

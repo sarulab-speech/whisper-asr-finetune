@@ -81,7 +81,6 @@ class WhisperModelModule(LightningModule):
         }
 
     def configure_optimizers(self):
-        """オプティマイザーとスケジューラーを作成する"""
         model = self.model
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
@@ -111,7 +110,6 @@ class WhisperModelModule(LightningModule):
         return [optimizer], [{"scheduler": scheduler, "interval": "step", "frequency": 1}]
     
     def setup(self, stage=None):
-        """初期設定（データセットの読み込み）"""
 
         if stage == 'fit' or stage is None:
             self.t_total = (
@@ -121,7 +119,6 @@ class WhisperModelModule(LightningModule):
             )
     
     def train_dataloader(self):
-        """訓練データローダーを作成する"""
         dataset = WhisperASRDataset(self.__train_dataset, self.tokenizer)
         return torch.utils.data.DataLoader(dataset, 
                     batch_size=self.config["batch_size"], 
@@ -130,7 +127,6 @@ class WhisperModelModule(LightningModule):
                 )
 
     def val_dataloader(self):
-        """バリデーションデータローダーを作成する"""
         dataset = WhisperASRDataset(self.__eval_dataset, self.tokenizer)
         return torch.utils.data.DataLoader(dataset, 
                     batch_size=self.config["batch_size"], 

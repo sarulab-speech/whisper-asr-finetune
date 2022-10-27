@@ -111,32 +111,3 @@ def load_data_list(
         x.strip("\n").split("\t")
         for x in open(list_path, "r").readlines()
     ]
-
-
-    # # path
-    # text_path = Path(text_path)
-    # audio_dir = Path(audio_dir)
-    # assert text_path.exists()
-    # assert len(audio_dir.glob("*.wav")) > 0
-    
-    # id_audio_text = []
-    # for line in open(text_path, "r").readlines():
-    #     name, text = line.split(":")
-        
-    #     # check text configuration
-    #     text = frontend(text)
-    #     if len(text) > text_max_length:
-    #         continue
-
-    #     # check audio configuration
-    #     wav_path = audio_dir / f"{name}.wav"
-    #     if not wav_path.exists():
-    #         continue
-
-    #     wav = load_wav(wav_path, sampling_rate=sampling_rate)[0]
-    #     if len(wav) > audio_max_sample_length:
-    #         continue
-        
-    #     id_audio_text.append((name, wav_path, text))
-
-    # return id_audio_text

@@ -28,7 +28,7 @@ train:
   weight_decay: 0.01
   adam_epsilon: 0.00000001
   warmup_steps: 2
-  num_worker: 1
+  num_worker: 2
   num_train_epochs: 10
   gradient_accumulation_steps: 1
 
