@@ -27,7 +27,7 @@ test_ratio = 1 - train_ratio - val_ratio
 assert test_ratio > 0
 
 # tool
-frontend = TextFrontend(None)
+frontend = TextFrontend(config["data"]["frontend"])
 
 # make data list
 data_list = []
@@ -38,7 +38,7 @@ for transcript_path in (out_zip_path.parent / config['corpus_name']).glob("*/tra
     for line in tqdm(open(transcript_path, "r").readlines(), desc=f"processing {transcript_path.parent}"):
         # text frontend
         name, text = line.strip("\n").split(":")
-        text = frontend(text)
+        text = frontend(text).replace("\t", "")
 
         # audio frontend
         in_wav_path = transcript_path.parent / "wav" / f"{name}.wav"

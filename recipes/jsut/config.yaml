@@ -9,13 +9,13 @@ path:
   download: "./downloads/jsut_ver1.1"
   preprocessed: "./preprocessed/jsut_ver1.1"
   log: "./log"
-  checkpoint: "./checkpoint"
+  checkpoint: "./checkpoint"  # dir to save model
 
 data:
   audio_sampling_rate: 16000
   audio_max_length: 480000
   lang: "ja"
-  frontend: None # None, openjtalk_kana
+  frontend: "pyopenjtalk_kana" # None(raw text), pyopenjtalk_kana (kana)
   text_max_length: 120
   train_ratio: 0.8
   val_ratio: 0.1
@@ -32,6 +32,8 @@ train:
   num_train_epochs: 10
   gradient_accumulation_steps: 1
 
-
+inference:
+  epoch_index: 7
+  
 
 

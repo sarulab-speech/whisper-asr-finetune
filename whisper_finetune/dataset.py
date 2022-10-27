@@ -28,7 +28,6 @@ class WhisperASRDataset(torch.utils.data.Dataset):
         return len(self.id_mel_text_list)
 
     def __getitem__(self, id):
-        print(self.id_mel_text_list[id])
         _, mel_path, text = self.id_mel_text_list[id]
 
         # text
