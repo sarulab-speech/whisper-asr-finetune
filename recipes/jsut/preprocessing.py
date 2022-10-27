@@ -55,7 +55,7 @@ for transcript_path in (out_zip_path.parent / config['corpus_name']).glob("*/tra
 
         # add to list
         data_list.append([name, str(out_mel_path), text])
-    break
+    # break
 
 # save list
 train_list, val_test_list = train_test_split(data_list, train_size=train_ratio)
