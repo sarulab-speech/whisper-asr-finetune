@@ -20,29 +20,29 @@ if not out_zip_path.exists():
 else:
     print("File exists; skip downloading corpus.")
 
-# copy
-transcript = {}
-data_dir = Path(config["path"]["data"])
-(data_dir / "wav").mkdir(parents=True, exist_ok=True)
+# # copy
+# transcript = {}
+# data_dir = Path(config["path"]["data"])
+# (data_dir / "wav").mkdir(parents=True, exist_ok=True)
 
-for transcript_path in (out_zip_path.parent / config['corpus_name']).glob("*/transcript_utf8.txt"):
-    for line in open(transcript_path, "r").readlines():
-        name, text = line.strip("\n").split(":")
-        in_wav_path = transcript_path.parent / "wav" / f"{name}.wav"
+# for transcript_path in (out_zip_path.parent / config['corpus_name']).glob("*/transcript_utf8.txt"):
+#     for line in open(transcript_path, "r").readlines():
+#         name, text = line.strip("\n").split(":")
+#         in_wav_path = transcript_path.parent / "wav" / f"{name}.wav"
 
-        if not in_wav_path.exists():
-            continue
+#         if not in_wav_path.exists():
+#             continue
         
-        # copy wav
-        out_wav_path = data_dir / "wav" / in_wav_path.name
-        shutil.copy(in_wav_path, out_wav_path)
+#         # copy wav
+#         out_wav_path = data_dir / "wav" / in_wav_path.name
+#         shutil.copy(in_wav_path, out_wav_path)
 
-        # store text
-        transcript[name] = text
+#         # store text
+#         transcript[name] = text
 
-out_txt_path = data_dir / "transcript.txt"
-with open(out_txt_path, "w") as f:
-    f.writelines([f"{name}:{text}\n" for name, text in transcript.items()])
+# out_txt_path = data_dir / "transcript.txt"
+# with open(out_txt_path, "w") as f:
+#     f.writelines([f"{name}:{text}\n" for name, text in transcript.items()])
 
 
 
