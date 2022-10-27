@@ -1,0 +1,13 @@
+PRECEDENT130_012	preprocessed/jsut_ver1.1/mel/PRECEDENT130_012.npy	本件訴えが、権利の濫用に該当するか否か。
+PRECEDENT130_099	preprocessed/jsut_ver1.1/mel/PRECEDENT130_099.npy	本件金銭授受につき返還の約束があったか。
+PRECEDENT130_085	preprocessed/jsut_ver1.1/mel/PRECEDENT130_085.npy	その余の損害については、いずれも否認する。
+PRECEDENT130_015	preprocessed/jsut_ver1.1/mel/PRECEDENT130_015.npy	これに反する被告らの主張は、いずれも採用できない。
+PRECEDENT130_064	preprocessed/jsut_ver1.1/mel/PRECEDENT130_064.npy	売買代金を準備できない場合は協力して用立てるので、心配いらない。
+PRECEDENT130_040	preprocessed/jsut_ver1.1/mel/PRECEDENT130_040.npy	また、私を故なく横領犯に仕立てるのは犯罪行為であり、別途、刑事訴訟を行う。
+PRECEDENT130_011	preprocessed/jsut_ver1.1/mel/PRECEDENT130_011.npy	反訴原告は、本件事故後に医療機関を受診したが、その経過は、次のとおりである。
+PRECEDENT130_032	preprocessed/jsut_ver1.1/mel/PRECEDENT130_032.npy	原告の主張は否認する、内装工事費について被告の利得はない。
+PRECEDENT130_008	preprocessed/jsut_ver1.1/mel/PRECEDENT130_008.npy	エルバコランテ裁判についての原告の主張は不知である。
+PRECEDENT130_059	preprocessed/jsut_ver1.1/mel/PRECEDENT130_059.npy	そもそも原告が主張するような本件事故は存在しない。
+PRECEDENT130_119	preprocessed/jsut_ver1.1/mel/PRECEDENT130_119.npy	請求原因ア、ないしウについて争うことを、明らかにしない。
+PRECEDENT130_117	preprocessed/jsut_ver1.1/mel/PRECEDENT130_117.npy	本件給食センターの概要は、以下のとおりである。
+PRECEDENT130_013	preprocessed/jsut_ver1.1/mel/PRECEDENT130_013.npy	合格処分の義務付けの訴えが許されるか。

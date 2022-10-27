@@ -1,0 +1,13 @@
+PRECEDENT130_052	preprocessed/jsut_ver1.1/mel/PRECEDENT130_052.npy	証拠によって認定した事実には、かっこ書きで、その証拠を掲記する。
+PRECEDENT130_112	preprocessed/jsut_ver1.1/mel/PRECEDENT130_112.npy	請求原因イ、及びウは、否認ないし争う。
+PRECEDENT130_044	preprocessed/jsut_ver1.1/mel/PRECEDENT130_044.npy	エヌクリプト社の株式を、借入金額相当分担保に提供することとする。
+PRECEDENT130_126	preprocessed/jsut_ver1.1/mel/PRECEDENT130_126.npy	表示の相違を記述しないことも、虚偽の陳述である。
+PRECEDENT130_071	preprocessed/jsut_ver1.1/mel/PRECEDENT130_071.npy	証拠等を掲げていない事実は、当事者間に争いがない。
+PRECEDENT130_043	preprocessed/jsut_ver1.1/mel/PRECEDENT130_043.npy	治療期間一三八日間を前提とする。
+PRECEDENT130_078	preprocessed/jsut_ver1.1/mel/PRECEDENT130_078.npy	本件事故によって、半月板の損傷が生じたものではない。
+PRECEDENT130_072	preprocessed/jsut_ver1.1/mel/PRECEDENT130_072.npy	本件整備事業の内容は、以下のとおりである。
+PRECEDENT130_106	preprocessed/jsut_ver1.1/mel/PRECEDENT130_106.npy	介護の必要性は認められない。
+PRECEDENT130_020	preprocessed/jsut_ver1.1/mel/PRECEDENT130_020.npy	同医師が作成した、後遺障害診断書には、次の記載がある。
+PRECEDENT130_105	preprocessed/jsut_ver1.1/mel/PRECEDENT130_105.npy	末尾に証拠の掲記がない事実は、当事者間に争いがない。
+PRECEDENT130_066	preprocessed/jsut_ver1.1/mel/PRECEDENT130_066.npy	原告は、本件事故直後から、手関節痛を訴えていた。
+PRECEDENT130_026	preprocessed/jsut_ver1.1/mel/PRECEDENT130_026.npy	原告夏子は、原告春男と同様に、治療費について人身傷害保険を使用した。

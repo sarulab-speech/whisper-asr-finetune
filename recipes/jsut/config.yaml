@@ -1,0 +1,37 @@
+# dirname to find data
+train_name: "whisper"
+train_id: "1"
+train_name: "jsut"
+model_name: "base"
+corpus_name: "jsut_ver1.1"
+
+path:
+  download: "./downloads/jsut_ver1.1"
+  preprocessed: "./preprocessed/jsut_ver1.1"
+  log: "./log"
+  checkpoint: "./checkpoint"
+
+data:
+  audio_sampling_rate: 16000
+  audio_max_length: 480000
+  lang: "ja"
+  frontend: None # None, openjtalk_kana
+  text_max_length: 120
+  train_ratio: 0.8
+  val_ratio: 0.1
+  timestamps: False
+
+train:
+  batch_size: 16
+  seed: 3407
+  learning_rate: 0.0005
+  weight_decay: 0.01
+  adam_epsilon: 0.00000001
+  warmup_steps: 2
+  num_worker: 1
+  num_train_epochs: 10
+  gradient_accumulation_steps: 1
+
+
+
+
