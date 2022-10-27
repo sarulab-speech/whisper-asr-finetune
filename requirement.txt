@@ -1,7 +1,6 @@
 git+https://github.com/openai/whisper.git
 
 jiwer
-numpy
 torch
 torchaudio
 tqdm
@@ -9,7 +8,7 @@ pathlib
 gdown
 sklearn
 
+numpy>=1.20
 pyopenjtalk==0.3.0
 pytorch-lightning==1.7.7
 evaluate==0.2.2
-

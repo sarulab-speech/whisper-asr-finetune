@@ -1,8 +1,5 @@
 import whisper
 from pytorch_lightning import LightningModule
-from pytorch_lightning import Trainer, seed_everything
-from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from pytorch_lightning.loggers import TensorBoardLogger
 import evaluate
 import torch
 from torch import nn
