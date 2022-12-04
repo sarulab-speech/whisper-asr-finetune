@@ -44,7 +44,11 @@ def inference():
     checkpoint_path = checkpoint_dir / "checkpoint" / f"checkpoint-epoch={epoch:04d}.ckpt"
     state_dict = torch.load(checkpoint_path)
     state_dict = state_dict['state_dict']
-    whisper_model = WhisperModelModule(config["train"])
+    whisper_model = WhisperModelModule(
+        config["train"],
+        model_name=config["model_name"], 
+        lang=config["data"]["lang"]
+    )
     whisper_model.load_state_dict(state_dict)
 
     # inference

@@ -43,7 +43,7 @@ def preprocess():
 
             # audio frontend
             in_wav_path = transcript_path.parent / "wav" / f"{name}.wav"
-            wav = load_wav(in_wav_path)
+            wav = load_wav(in_wav_path, sample_rate=audio_sampling_rate)
 
             if not valid_audio_text_safe(text, wav, text_max_length, audio_max_length):
                 continue
@@ -56,7 +56,6 @@ def preprocess():
 
             # add to list
             data_list.append([name, str(out_mel_path), text])
-        # break
 
     # save list
     train_list, val_test_list = train_test_split(data_list, train_size=train_ratio)

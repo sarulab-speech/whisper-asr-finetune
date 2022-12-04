@@ -15,7 +15,7 @@ class WhisperModelModule(LightningModule):
         super().__init__()
         self.options = whisper.DecodingOptions(language=lang, without_timestamps=True)
         self.model = whisper.load_model(model_name)
-        self.tokenizer = whisper.tokenizer.get_tokenizer(True, language="ja", task=self.options.task)
+        self.tokenizer = whisper.tokenizer.get_tokenizer(True, language=lang, task=self.options.task)
 
         # only decoder training
         for p in self.model.encoder.parameters():

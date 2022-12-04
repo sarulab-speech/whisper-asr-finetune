@@ -28,7 +28,7 @@ class WhisperASRDataset(torch.utils.data.Dataset):
         return len(self.id_mel_text_list)
 
     def __getitem__(self, id):
-        _, mel_path, text = self.id_mel_text_list[id]
+        utt_id, mel_path, text = self.id_mel_text_list[id]
 
         # text
         text = [*self.tokenizer.sot_sequence_including_notimestamps] + self.tokenizer.encode(text)
@@ -41,17 +41,19 @@ class WhisperASRDataset(torch.utils.data.Dataset):
         return {
             "input_ids": mel,
             "labels": labels,
-            "dec_input_ids": text
+            "dec_input_ids": text,
+            "utt_id": utt_id
         }
 
 
 class WhisperASRDataCollator():
     def __call__(self, features):
-        input_ids, labels, dec_input_ids = [], [], []
+        input_ids, labels, dec_input_ids, utt_ids = [], [], [], []
         for feature in features:
             input_ids.append(feature["input_ids"])
             labels.append(feature["labels"])
             dec_input_ids.append(feature["dec_input_ids"])
+            utt_ids.append(feature["utt_id"])
 
         input_ids = torch.concat([input_id[None, :] for input_id in input_ids])
         
@@ -78,6 +80,7 @@ class WhisperASRDataCollator():
             for k, v in batch.items()
         }
         batch["input_ids"] = input_ids
+        batch["utt_id"] = utt_ids
 
         return batch
 
